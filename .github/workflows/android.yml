@@ -15,7 +15,7 @@ jobs:
                 run: chmod +x ./gradlew
 
             -   name: Run debug build
-                run: ./gradlew installDebug
+                run: ./gradlew assembleRelease
 
             -   name: Upload artifact to GitHub
                 uses: actions/upload-artifact@v2
