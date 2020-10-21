@@ -11,15 +11,16 @@ jobs:
         steps:
             -   uses: actions/checkout@v2
             
-            -   name: enablee
+            -   name: enablee excutable
                 run: chmod +x ./gradlew
 
             -   name: Run debug build
-                run: ./gradlew assembleRelease
+                run: ./gradlew assembleDebug
 
             -   name: Upload artifact to GitHub
                 uses: actions/upload-artifact@v2
                 with:
                     name: NewPipe-debug.apk
-                    path: ./**/*apk
+#                    path: ./**/*apk
+                    path: ./*.apk
 #                    path: app/build/outputs/apk/debug/app-debug.apk
