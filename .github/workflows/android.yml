@@ -22,5 +22,5 @@ jobs:
                 with:
                     name: NewPipe-debug.apk
 #                    path: ./**/*apk
-                    path: ./*.apk
-#                    path: app/build/outputs/apk/debug/app-debug.apk
+#                    path: ./*.apk
+                    path: app/build/outputs/apk/debug/app-debug.apk
